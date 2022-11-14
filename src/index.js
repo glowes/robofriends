@@ -1,13 +1,17 @@
-import React from 'react';
+import React  from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons' //give us some nice classes to edit a text, like 'tc' - text center
+
+//created for teste
+import App from './Containers/App'
+//import {robots} from './robots' // aqui usamos o '{}' para desfragmentar o robots.js pois neste ficheiro foi enviado como export (aqui podemos enviar muitos elementos) e nao como export default
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
